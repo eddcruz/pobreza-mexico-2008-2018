@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Años de Medición de Pobreza en México | CONEVAL 2008-2018</title>
+    
+    <!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>10 Años de Medición de Pobreza en México</h1>
+                    <p class="subtitle">Análisis multidimensional 2008-2018 | CONEVAL</p>
+                </div>
+                <div class="logo">CONEVAL</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section - KPIs -->
+        <section class="hero">
+            <h2>Indicadores Principales 2008-2018</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">Población en Pobreza</div>
+                    <div class="kpi-value">44.4% → 41.9%</div>
+                    <div class="kpi-change">↓ 2.5 puntos porcentuales</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Personas en Pobreza</div>
+                    <div class="kpi-value">49.5M → 52.4M</div>
+                    <div class="kpi-change negative">↑ 2.9 millones</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Pobreza Extrema</div>
+                    <div class="kpi-value">11.0% → 7.4%</div>
+                    <div class="kpi-change">↓ 3.6 puntos porcentuales</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Personas en Pobreza Extrema</div>
+                    <div class="kpi-value">12.3M → 9.3M</div>
+                    <div class="kpi-change">↓ 3 millones</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Evolución Nacional -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Evolución de la Pobreza Nacional</h2>
+                <p class="section-description">
+                    Tendencia del porcentaje de población en situación de pobreza y pobreza extrema durante el período 2008-2018. 
+                    Se observa una reducción gradual en ambos indicadores, siendo más significativa la disminución de la pobreza extrema.
+                </p>
+            </div>
+            <div id="chart1" class="chart-container" role="img" aria-label="Gráfico de evolución de pobreza nacional"></div>
+        </section>
+
+        <!-- Section 2: Carencias Sociales -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Evolución de las Carencias Sociales</h2>
+                <p class="section-description">
+                    Comparación de las seis carencias sociales medidas por CONEVAL. El acceso a servicios de salud muestra la mayor mejora, 
+                    mientras que la seguridad social permanece como el principal reto con más del 57% de la población afectada.
+                </p>
+            </div>
+            <div id="chart2" class="chart-container" role="img" aria-label="Gráfico de carencias sociales"></div>
+        </section>
+
+        <!-- Section 3: Brechas Sociales -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Brechas Sociales en la Pobreza</h2>
+                <p class="section-description">
+                    Análisis de las desigualdades entre diferentes grupos poblacionales. Se evidencia una brecha persistente 
+                    entre zonas rurales-urbanas y población indígena-no indígena.
+                </p>
+            </div>
+            <div class="two-col-grid" role="group" aria-label="Comparación de brechas sociales">
+                <div class="chart-card">
+                    <h3>Pobreza Rural vs Urbana</h3>
+                    <div id="chart3" style="height: 350px;" role="img" aria-label="Gráfico de pobreza rural vs urbana"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Población Indígena vs No Indígena</h3>
+                    <div id="chart4" style="height: 350px;" role="img" aria-label="Gráfico de población indígena vs no indígena"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Comparativo por Estados -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Pobreza por Entidad Federativa 2018</h2>
+                <p class="section-description">
+                    Los estados del sureste (Chiapas, Guerrero, Oaxaca y Veracruz) concentran los mayores niveles de pobreza, 
+                    mientras que estados del norte como Nuevo León presentan los indicadores más bajos.
+                </p>
+            </div>
+            <div id="chart5" class="chart-container" role="img" aria-label="Gráfico de pobreza por entidad federativa"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fuente de Datos</h3>
+                    <p>
+                        <strong>CONEVAL</strong> - Consejo Nacional de Evaluación de la Política de Desarrollo Social<br>
+                        Comunicado de Prensa No. 10<br>
+                        Ciudad de México, 5 de agosto de 2019
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Metodología</h3>
+                    <ul>
+                        <li>Medición multidimensional de la pobreza</li>
+                        <li>Basado en MCS-ENIGH 2008-2018</li>
+                        <li>Criterios metodológicos inalterados por 10 años</li>
+                        <li>Cobertura: Nacional y 32 entidades federativas</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Acerca del Dashboard</h3>
+                    <p>
+                        Visualización de datos elaborada para el curso de Ciencia de Datos. 
+                        Los gráficos presentan información oficial de CONEVAL sobre la evolución 
+                        de la pobreza en México durante la década 2008-2018.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/charts.js"></script>
+</body>
+</html>
