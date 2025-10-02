@@ -20,13 +20,11 @@ Este dashboard presenta un análisis visual completo de los indicadores de pobre
 - **Google Charts** - Librería de gráficos interactivos
 
 ## 📁 Estructura del Proyecto
-pobreza-mexico-2008-2018/
-├── index.html          # Página principal
-├── css/
-│   └── styles.css      # Estilos personalizados
-├── js/
-│   └── charts.js       # Lógica de gráficos
-└── README.md           # Documentación
+
+- 📄 **index.html** - Página principal del dashboard
+- 🎨 **css/styles.css** - Diseño responsivo y paleta de colores
+- ⚙️ **js/charts.js** - 5 gráficos interactivos de Google Charts
+- 📖 **README.md** - Documentación completa
 
 ## 📈 Gráficos Incluidos
 
